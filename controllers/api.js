@@ -28,7 +28,7 @@ exports.getGateway = function(req, res, next) {
       req.flash('success', { msg: 'Transaction Completed - Your Transaction Id is: ' + req.query['transaction'] 
       + '. The expected clearing date of the transaction is: ' + req.query['clearingDate']});
     }
-    var redirect_uri = 'http://localhost:3000/api/gateway';
+    var redirect_uri = secrets.dwolla.host + '/api/gateway';
     var purchaseOrder = {
      destinationId: '812-166-2366',
      total: '11.00'
