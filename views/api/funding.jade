@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+  .page-header
+    h2
+      i.fa.fa-bank
+      | Funding Sources
+
+  .alert.alert-info
+    h5 Access Token: #{atoken}
+    h5 Refresh Token: #{rtoken}
+
+  .panel.panel-primary
+    .panel-heading List Funding Sources Example
+    .panel-body
+      p This is the response you will get when successfully.
+      pre.
+        #{response}

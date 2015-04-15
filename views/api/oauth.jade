@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  .page-header
+    h2
+      i.fa.fa-link
+      | Dwolla OAuth Example
+
+  h3 Sample OAuth Flow
+  h4 Without IAV
+    a(href=authUrl1)
+      br
+      button.btn.btn-primary Authorize with Dwolla
+  h4 With IAV
+    a(href=authUrl2)
+      br
+      button.btn.btn-primary Authorize with Dwolla

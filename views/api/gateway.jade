@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+  .page-header
+    h2
+      i.fa.fa-shopping-cart
+      | Dwolla Off-Site Gateway API
+
+  .alert.alert-info
+    h4 Off-Site Gateway Checkout:
+    a(href=' #{checkout}')  #{checkout}
