@@ -39,6 +39,7 @@
     "passport-oauth": "^1.0.0",
     "request": "^2.53.0",
     "uglify-js": "^2.4.17",
+    "util": "^0.10.3",
     "validator": "^3.33.0",
     "yui": "^3.18.1"
   },
