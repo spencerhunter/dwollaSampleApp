@@ -66,10 +66,15 @@ exports.getOauth = function(req, res) {
    encodeURIComponent(client_id),
    encodeURIComponent(redirect_uri),
    encodeURIComponent(scope2));
+  var url3 = util.format("https://uat.dwolla.com/oauth/v2/authenticate?client_id=%s&response_type=code&redirect_uri=%s&scope=%s&verified_account=true",
+   encodeURIComponent(client_id),
+   encodeURIComponent(redirect_uri),
+   encodeURIComponent(scope2));
   res.render('api/oauth', {
     title: 'OAuth Example',
     authUrl1: url1,
-    authUrl2: url2
+    authUrl2: url2,
+    authUrl3: url3
   });
 };
 
