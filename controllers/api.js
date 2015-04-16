@@ -30,7 +30,7 @@ exports.getGateway = function(req, res, next) {
     }
     var redirect_uri = secrets.dwolla.host + '/api/gateway';
     var purchaseOrder = {
-     destinationId: '812-166-2366',
+     destinationId: secrets.dwoll.destinationId,
      total: '11.00'
     };
 

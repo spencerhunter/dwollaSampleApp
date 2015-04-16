@@ -17,5 +17,6 @@ module.exports = {
     authorizationURL: 'https://uat.dwolla.com/oauth/v2/authenticate',
     tokenURL: 'https://uat.dwolla.com/oauth/v2/token',
     host: process.env.HOST || 'http://localhost:3000'
+    destinationId: process.env.DESTINATION_ID || '812-229-9995'
   }
 };
