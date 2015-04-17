@@ -11,8 +11,8 @@ module.exports = {
   },
 
   dwolla: {
-    clientID: process.env.DWOLLA_ID || '',
-    clientSecret: process.env.DWOLLA_SECRET || '',
+    clientID: process.env.DWOLLA_ID || 'YOUR CLIENT ID HERE',
+    clientSecret: process.env.DWOLLA_SECRET || 'YOUR CLIENT SECRET HERE',
     callbackURL: '/auth/dwolla/callback',
     authorizationURL: 'https://uat.dwolla.com/oauth/v2/authenticate',
     tokenURL: 'https://uat.dwolla.com/oauth/v2/token',
