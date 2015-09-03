@@ -62,15 +62,15 @@ exports.getOauth = function(req, res) {
     var scope2 = 'AccountInfoFull|Funding|Send';
     var client_id = secrets.dwolla.clientID;
     var redirect_uri = secrets.dwolla.host + '/api/oauth/return';
-    var url1 = util.format("https://uat.dwolla.com/oauth/v2/authenticate?client_id=%s&response_type=code&redirect_uri=%s&scope=%s",
+    var url1 = util.format("https://uat.dwolla.com/oauth/v2/authenticate?client_id=%s&response_type=code&redirect_uri=%s&scope=%s&dwolla_landing=register",
         encodeURIComponent(client_id),
         encodeURIComponent(redirect_uri),
         encodeURIComponent(scope1));
-    var url2 = util.format("https://uat.dwolla.com/oauth/v2/authenticate?client_id=%s&response_type=code&redirect_uri=%s&scope=%s",
+    var url2 = util.format("https://uat.dwolla.com/oauth/v2/authenticate?client_id=%s&response_type=code&redirect_uri=%s&scope=%s&dwolla_landing=register",
         encodeURIComponent(client_id),
         encodeURIComponent(redirect_uri),
         encodeURIComponent(scope2));
-    var url3 = util.format("https://uat.dwolla.com/oauth/v2/authenticate?client_id=%s&response_type=code&redirect_uri=%s&scope=%s&verified_account=true",
+    var url3 = util.format("https://uat.dwolla.com/oauth/v2/authenticate?client_id=%s&response_type=code&redirect_uri=%s&scope=%s&verified_account=true&dwolla_landing=register",
         encodeURIComponent(client_id),
         encodeURIComponent(redirect_uri),
         encodeURIComponent(scope2));
